@@ -112,8 +112,8 @@ public class LapisWaterPipe extends BaseEntityBlock {
             }else if(!isOff && pPlayer.getItemInHand(pHand).getItem()!=Items.FLINT_AND_STEEL && recipe) {
                 pLevel.playSound(null, pPos, ModSounds.WATER_PIPE_SMOKE.get(), SoundSource.BLOCKS,2.5f,1f);
                 LWPEntity.craftItem((LWPEntity) entity);
-                pPlayer.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY,500));
-                pPlayer.addEffect(new MobEffectInstance(MobEffects.CONFUSION,500, 2));
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.CONDUIT_POWER,1200));
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.CONFUSION,1200, 2));
 
 
                 //Si se intenta fumar cuando no tiene materiales, se apaga

@@ -9,6 +9,8 @@
   "block.waterpipes.diamond_water_pipe": "Diamond water pipe",
   "block.waterpipes.lapis_water_pipe": "Lapis water pipe",
   "block.waterpipes.copper_water_pipe": "Copper water pipe",
+  "block.waterpipes.wooden_water_pipe": "Wooden water pipe",
+  "block.waterpipes.stone_water_pipe": "Stone water pipe",
 
   "item.waterpipes.hose": "Hose",
   "item.waterpipes.piece_of_coal": "Piece of coal",

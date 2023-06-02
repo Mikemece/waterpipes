@@ -1,7 +1,7 @@
 package com.mikemece.waterpipes.block.custom;
 
 import com.mikemece.waterpipes.block.entity.ModBlockEntities;
-import com.mikemece.waterpipes.block.entity.custom.DWPEntity;
+import com.mikemece.waterpipes.block.entity.custom.SWPEntity;
 import com.mikemece.waterpipes.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -34,11 +34,11 @@ import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
 
-public class DiamondWaterPipe extends BaseEntityBlock {
+public class StoneWaterPipe extends BaseEntityBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty ISOFF =BooleanProperty.create("isoff");
 
-    public DiamondWaterPipe(Properties properties) {
+    public StoneWaterPipe(Properties properties) {
         super(properties);
     }
 
@@ -81,8 +81,8 @@ public class DiamondWaterPipe extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if (pState.getBlock() != pNewState.getBlock()) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof DWPEntity) {
-                ((DWPEntity) blockEntity).drops();
+            if (blockEntity instanceof SWPEntity) {
+                ((SWPEntity) blockEntity).drops();
             }
         }
         super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
@@ -95,7 +95,7 @@ public class DiamondWaterPipe extends BaseEntityBlock {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
             boolean isOff = pState.getValue(ISOFF);
-            boolean recipe = DWPEntity.hasRecipe((DWPEntity) entity);
+            boolean recipe = SWPEntity.hasRecipe((SWPEntity) entity);
 
             //Si está encendida y se le da con un mechero se apaga
             if(pPlayer.getItemInHand(pHand).getItem()==Items.FLINT_AND_STEEL && !isOff) {
@@ -111,9 +111,9 @@ public class DiamondWaterPipe extends BaseEntityBlock {
             //Si está encendida y se le da con algo que no sea mechero se fuma
             }else if(!isOff && pPlayer.getItemInHand(pHand).getItem()!=Items.FLINT_AND_STEEL && recipe) {
                 pLevel.playSound(null, pPos, ModSounds.WATER_PIPE_SMOKE.get(), SoundSource.BLOCKS,2.5f,1f);
-                DWPEntity.craftItem((DWPEntity) entity);
-                pPlayer.addEffect(new MobEffectInstance(MobEffects.REGENERATION,1200,1));
-                pPlayer.addEffect(new MobEffectInstance(MobEffects.BLINDNESS,1200,4));
+                SWPEntity.craftItem((SWPEntity) entity);
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.JUMP,1200, 1));
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.HUNGER,1200,1));
 
 
             //Si se intenta fumar cuando no tiene materiales, se apaga
@@ -123,8 +123,8 @@ public class DiamondWaterPipe extends BaseEntityBlock {
 
             //Si no ocurre nada de lo anterior accedemos al inventario
             }else{
-                if (entity instanceof DWPEntity) {
-                    NetworkHooks.openScreen(((ServerPlayer) pPlayer), (DWPEntity) entity, pPos);
+                if (entity instanceof SWPEntity) {
+                    NetworkHooks.openScreen(((ServerPlayer) pPlayer), (SWPEntity) entity, pPos);
                 } else {
                     throw new IllegalStateException("Our Container provider is missing!");
                 }
@@ -155,13 +155,13 @@ public class DiamondWaterPipe extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        return new DWPEntity(pPos, pState);
+        return new SWPEntity(pPos, pState);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
-        return createTickerHelper(pBlockEntityType, ModBlockEntities.DIAMOND_WATER_PIPE_ENTITY.get(),
-                DWPEntity::tick);
+        return createTickerHelper(pBlockEntityType, ModBlockEntities.STONE_WATER_PIPE_ENTITY.get(),
+                SWPEntity::tick);
     }
 }

@@ -112,8 +112,8 @@ public class EmeraldWaterPipe extends BaseEntityBlock {
             }else if(!isOff && pPlayer.getItemInHand(pHand).getItem()!=Items.FLINT_AND_STEEL && recipe) {
                 pLevel.playSound(null, pPos, ModSounds.WATER_PIPE_SMOKE.get(), SoundSource.BLOCKS,2.5f,1f);
                 EWPEntity.craftItem((EWPEntity) entity);
-                pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,500,3));
-                pPlayer.addEffect(new MobEffectInstance(MobEffects.POISON,250));
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE,1200,2));
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.DARKNESS,1200,1));
 
 
                 //Si se intenta fumar cuando no tiene materiales, se apaga
