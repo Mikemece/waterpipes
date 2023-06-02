@@ -44,6 +44,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> LAPIS_WATER_PIPE = registerBlock("lapis_water_pipe", ()->new LapisWaterPipe(BlockBehaviour.Properties.of(Material.GLASS)
             .strength(0.5f).sound(SoundType.GLASS).noOcclusion().lightLevel(
                     (state) -> state.getValue(LapisWaterPipe.ISOFF) ? 0:8)), Waterpipes.WATERPIPES);
+    public static final RegistryObject<Block> COPPER_WATER_PIPE = registerBlock("copper_water_pipe", ()->new CopperWaterPipe(BlockBehaviour.Properties.of(Material.GLASS)
+            .strength(0.5f).sound(SoundType.GLASS).noOcclusion().lightLevel(
+                    (state) -> state.getValue(CopperWaterPipe.ISOFF) ? 0:8)), Waterpipes.WATERPIPES);
 
 
 

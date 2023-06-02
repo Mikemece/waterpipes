@@ -42,6 +42,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("lapis_water_pipe_entity", () ->
                     BlockEntityType.Builder.of(LWPEntity::new,
                             ModBlocks.LAPIS_WATER_PIPE.get()).build(null));
+    public static final RegistryObject<BlockEntityType<CWPEntity>> COPPER_WATER_PIPE_ENTITY =
+            BLOCK_ENTITIES.register("copper_water_pipe_entity", () ->
+                    BlockEntityType.Builder.of(CWPEntity::new,
+                            ModBlocks.COPPER_WATER_PIPE.get()).build(null));
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }
