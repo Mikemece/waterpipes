@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=north,isoff=true": { "model": "waterpipes:block/amethyst_water_pipe" },
+    "facing=east,isoff=true": { "model": "waterpipes:block/amethyst_water_pipe", "y": 90 },
+    "facing=south,isoff=true": { "model": "waterpipes:block/amethyst_water_pipe", "y": 180 },
+    "facing=west,isoff=true": { "model": "waterpipes:block/amethyst_water_pipe", "y": 270 },
+    "facing=north,isoff=false": { "model": "waterpipes:block/amethyst_water_pipe_on" },
+    "facing=east,isoff=false": { "model": "waterpipes:block/amethyst_water_pipe_on", "y": 90 },
+    "facing=south,isoff=false": { "model": "waterpipes:block/amethyst_water_pipe_on", "y": 180 },
+    "facing=west,isoff=false": { "model": "waterpipes:block/amethyst_water_pipe_on", "y": 270 }
+  }
+}

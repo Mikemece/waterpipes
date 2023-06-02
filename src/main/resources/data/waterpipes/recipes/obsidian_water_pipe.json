@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " c ",
+    " im",
+    "ogo"
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_block"
+    },
+    "o": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "m": {
+      "item": "waterpipes:hose"
+    },
+    "c": {
+      "item": "minecraft:coal_block"
+    }
+  },
+  "result": {
+    "item": "waterpipes:obsidian_water_pipe"
+  }
+}

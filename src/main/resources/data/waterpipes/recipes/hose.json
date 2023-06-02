@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ss",
+    "sis",
+    "is "
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "s": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "result": {
+    "item": "waterpipes:hose"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " c ",
+    " im",
+    "ege"
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_block"
+    },
+    "e": {
+      "item": "minecraft:emerald_block"
+    },
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "m": {
+      "item": "waterpipes:hose"
+    },
+    "c": {
+      "item": "minecraft:coal_block"
+    }
+  },
+  "result": {
+    "item": "waterpipes:emerald_water_pipe"
+  }
+}
