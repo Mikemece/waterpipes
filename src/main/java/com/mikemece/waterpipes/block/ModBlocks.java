@@ -59,6 +59,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> NETHERITE_WATER_PIPE = registerBlock("netherite_water_pipe", ()->new NetheriteWaterPipe(BlockBehaviour.Properties.of(Material.GLASS)
             .strength(0.5f).sound(SoundType.GLASS).noOcclusion().lightLevel(
                     (state) -> state.getValue(NetheriteWaterPipe.ISOFF) ? 0:10)), Waterpipes.WATERPIPES);
+    public static final RegistryObject<Block> GOLDEN_WATER_PIPE = registerBlock("golden_water_pipe", ()->new GoldenWaterPipe(BlockBehaviour.Properties.of(Material.GLASS)
+            .strength(0.5f).sound(SoundType.GLASS).noOcclusion().lightLevel(
+                    (state) -> state.getValue(GoldenWaterPipe.ISOFF) ? 0:10)), Waterpipes.WATERPIPES);
 
 
 //Metodos necesarios para los bloques

@@ -62,6 +62,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("netherite_water_pipe_entity", () ->
                     BlockEntityType.Builder.of(NWPEntity::new,
                             ModBlocks.NETHERITE_WATER_PIPE.get()).build(null));
+    public static final RegistryObject<BlockEntityType<GWPEntity>> GOLDEN_WATER_PIPE_ENTITY =
+            BLOCK_ENTITIES.register("golden_water_pipe_entity", () ->
+                    BlockEntityType.Builder.of(GWPEntity::new,
+                            ModBlocks.GOLDEN_WATER_PIPE.get()).build(null));
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }
