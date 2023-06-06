@@ -1,7 +1,7 @@
 package com.mikemece.waterpipes.block.custom;
 
 import com.mikemece.waterpipes.block.entity.ModBlockEntities;
-import com.mikemece.waterpipes.block.entity.custom.OWPEntity;
+import com.mikemece.waterpipes.block.entity.custom.QWPEntity;
 import com.mikemece.waterpipes.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -34,11 +34,11 @@ import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
 
-public class ObsidianWaterPipe extends BaseEntityBlock {
+public class QuartzWaterPipe extends BaseEntityBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty ISOFF =BooleanProperty.create("isoff");
 
-    public ObsidianWaterPipe(Properties properties) {
+    public QuartzWaterPipe(Properties properties) {
         super(properties);
     }
 
@@ -81,8 +81,8 @@ public class ObsidianWaterPipe extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if (pState.getBlock() != pNewState.getBlock()) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof OWPEntity) {
-                ((OWPEntity) blockEntity).drops();
+            if (blockEntity instanceof QWPEntity) {
+                ((QWPEntity) blockEntity).drops();
             }
         }
         super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
@@ -95,7 +95,7 @@ public class ObsidianWaterPipe extends BaseEntityBlock {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
             boolean isOff = pState.getValue(ISOFF);
-            boolean recipe = OWPEntity.hasRecipe((OWPEntity) entity);
+            boolean recipe = QWPEntity.hasRecipe((QWPEntity) entity);
 
             //Si está encendida y se le da con un mechero se apaga
             if(pPlayer.getItemInHand(pHand).getItem()==Items.FLINT_AND_STEEL && !isOff) {
@@ -111,9 +111,9 @@ public class ObsidianWaterPipe extends BaseEntityBlock {
             //Si está encendida y se le da con algo que no sea mechero se fuma
             }else if(!isOff && pPlayer.getItemInHand(pHand).getItem()!=Items.FLINT_AND_STEEL && recipe) {
                 pLevel.playSound(null, pPos, ModSounds.WATER_PIPE_SMOKE.get(), SoundSource.BLOCKS,2.5f,1f);
-                OWPEntity.craftItem((OWPEntity) entity);
-                pPlayer.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,1200,2));
-                pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,1200,2));
+                QWPEntity.craftItem((QWPEntity) entity);
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST,1200,1));
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.HUNGER,1200,2));
 
 
             //Si se intenta fumar cuando no tiene materiales, se apaga
@@ -123,8 +123,8 @@ public class ObsidianWaterPipe extends BaseEntityBlock {
 
             //Si no ocurre nada de lo anterior accedemos al inventario
             }else{
-                if (entity instanceof OWPEntity) {
-                    NetworkHooks.openScreen(((ServerPlayer) pPlayer), (OWPEntity) entity, pPos);
+                if (entity instanceof QWPEntity) {
+                    NetworkHooks.openScreen(((ServerPlayer) pPlayer), (QWPEntity) entity, pPos);
                 } else {
                     throw new IllegalStateException("Our Container provider is missing!");
                 }
@@ -155,13 +155,13 @@ public class ObsidianWaterPipe extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        return new OWPEntity(pPos, pState);
+        return new QWPEntity(pPos, pState);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
-        return createTickerHelper(pBlockEntityType, ModBlockEntities.OBSIDIAN_WATER_PIPE_ENTITY.get(),
-                OWPEntity::tick);
+        return createTickerHelper(pBlockEntityType, ModBlockEntities.QUARTZ_WATER_PIPE_ENTITY.get(),
+                QWPEntity::tick);
     }
 }

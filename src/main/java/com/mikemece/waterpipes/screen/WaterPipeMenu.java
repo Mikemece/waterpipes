@@ -105,7 +105,9 @@ public class WaterPipeMenu extends AbstractContainerMenu {
                 pPlayer, ModBlocks.LAPIS_WATER_PIPE.get()) || stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
                 pPlayer, ModBlocks.COPPER_WATER_PIPE.get()) || stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
                 pPlayer, ModBlocks.WOODEN_WATER_PIPE.get()) || stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, ModBlocks.STONE_WATER_PIPE.get()));
+                pPlayer, ModBlocks.STONE_WATER_PIPE.get()) || stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
+                pPlayer, ModBlocks.QUARTZ_WATER_PIPE.get()) || stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
+                pPlayer, ModBlocks.NETHERITE_WATER_PIPE.get()));
     }
 
     private void addPlayerInventory(Inventory playerInventory) {
