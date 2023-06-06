@@ -54,6 +54,14 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("stone_water_pipe_entity", () ->
                     BlockEntityType.Builder.of(SWPEntity::new,
                             ModBlocks.STONE_WATER_PIPE.get()).build(null));
+    public static final RegistryObject<BlockEntityType<QWPEntity>> QUARTZ_WATER_PIPE_ENTITY =
+            BLOCK_ENTITIES.register("quartz_water_pipe_entity", () ->
+                    BlockEntityType.Builder.of(QWPEntity::new,
+                            ModBlocks.QUARTZ_WATER_PIPE.get()).build(null));
+    public static final RegistryObject<BlockEntityType<NWPEntity>> NETHERITE_WATER_PIPE_ENTITY =
+            BLOCK_ENTITIES.register("netherite_water_pipe_entity", () ->
+                    BlockEntityType.Builder.of(NWPEntity::new,
+                            ModBlocks.NETHERITE_WATER_PIPE.get()).build(null));
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }

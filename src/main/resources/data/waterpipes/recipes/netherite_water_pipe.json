@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " c ",
+    " im",
+    "aga"
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_block"
+    },
+    "a": {
+      "item": "minecraft:netherite_block"
+    },
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "m": {
+      "item": "waterpipes:hose"
+    },
+    "c": {
+      "item": "minecraft:coal_block"
+    }
+  },
+  "result": {
+    "item": "waterpipes:netherite_water_pipe"
+  }
+}

@@ -112,8 +112,8 @@ public class StoneWaterPipe extends BaseEntityBlock {
             }else if(!isOff && pPlayer.getItemInHand(pHand).getItem()!=Items.FLINT_AND_STEEL && recipe) {
                 pLevel.playSound(null, pPos, ModSounds.WATER_PIPE_SMOKE.get(), SoundSource.BLOCKS,2.5f,1f);
                 SWPEntity.craftItem((SWPEntity) entity);
-                pPlayer.addEffect(new MobEffectInstance(MobEffects.JUMP,1200, 1));
-                pPlayer.addEffect(new MobEffectInstance(MobEffects.HUNGER,1200,1));
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.JUMP,1200, 2));
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.HARM,1));
 
 
             //Si se intenta fumar cuando no tiene materiales, se apaga
