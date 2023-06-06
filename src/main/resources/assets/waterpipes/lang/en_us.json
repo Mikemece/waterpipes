@@ -1,19 +1,19 @@
 
 {
-  "itemGroup.waterpipes": "Water pipes",
+  "itemGroup.waterpipes": "Waterpipes",
 
-  "block.waterpipes.amethyst_water_pipe": "Amethyst water pipe",
-  "block.waterpipes.redstone_water_pipe": "Redstone water pipe",
-  "block.waterpipes.emerald_water_pipe": "Emerald water pipe",
-  "block.waterpipes.obsidian_water_pipe": "Obsidian water pipe",
-  "block.waterpipes.diamond_water_pipe": "Diamond water pipe",
-  "block.waterpipes.lapis_water_pipe": "Lapis water pipe",
-  "block.waterpipes.copper_water_pipe": "Copper water pipe",
-  "block.waterpipes.wooden_water_pipe": "Wooden water pipe",
-  "block.waterpipes.stone_water_pipe": "Stone water pipe",
-  "block.waterpipes.quartz_water_pipe": "Quartz water pipe",
-  "block.waterpipes.netherite_water_pipe": "Netherite water pipe",
-  "block.waterpipes.golden_water_pipe": "Golden water pipe",
+  "block.waterpipes.amethyst_water_pipe": "Amethyst waterpipe",
+  "block.waterpipes.redstone_water_pipe": "Redstone waterpipe",
+  "block.waterpipes.emerald_water_pipe": "Emerald waterpipe",
+  "block.waterpipes.obsidian_water_pipe": "Obsidian waterpipe",
+  "block.waterpipes.diamond_water_pipe": "Diamond waterpipe",
+  "block.waterpipes.lapis_water_pipe": "Lapis waterpipe",
+  "block.waterpipes.copper_water_pipe": "Copper waterpipe",
+  "block.waterpipes.wooden_water_pipe": "Wooden waterpipe",
+  "block.waterpipes.stone_water_pipe": "Stone waterpipe",
+  "block.waterpipes.quartz_water_pipe": "Quartz waterpipe",
+  "block.waterpipes.netherite_water_pipe": "Netherite waterpipe",
+  "block.waterpipes.golden_water_pipe": "Golden waterpipe",
 
   "item.waterpipes.hose": "Hose",
   "item.waterpipes.piece_of_coal": "Piece of coal",
@@ -21,6 +21,6 @@
   "waterpipes.tooltip.liquid.amount.with.capacity" : "%s / %s mB",
   "waterpipes.tooltip.liquid.amount": "%s mB",
 
-  "sounds.waterpipes.water_pipe_on": "Water pipe turns on",
-  "sounds.waterpipes.water_pipe_smoke": "Smoking from a water pipe"
+  "sounds.waterpipes.water_pipe_on": "Waterpipe turns on",
+  "sounds.waterpipes.water_pipe_smoke": "Smoking from a waterpipe"
 }
