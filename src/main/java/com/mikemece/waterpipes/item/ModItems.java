@@ -1,6 +1,7 @@
 package com.mikemece.waterpipes.item;
 
 import com.mikemece.waterpipes.Waterpipes;
+import com.mikemece.waterpipes.item.custom.AmethystVape;
 import com.mikemece.waterpipes.item.custom.PieceOfCoalItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,10 +17,13 @@ public class ModItems {
 //primer objeto añadido
     public static final RegistryObject<Item> HOSE = ITEMS.register("hose",
             ()-> new Item(new Item.Properties().tab(Waterpipes.WATERPIPES)));
+    public static final RegistryObject<Item> VAPE_BATTERY = ITEMS.register("vape_battery",
+            ()-> new Item(new Item.Properties().tab(Waterpipes.WATERPIPES)));
 
     public static final RegistryObject<Item> PIECE_OF_COAL = ITEMS.register("piece_of_coal",
             ()-> new PieceOfCoalItem(new Item.Properties().tab(Waterpipes.WATERPIPES)){});
-
+    public static final RegistryObject<Item> AMETHYST_VAPE = ITEMS.register("amethyst_vape",
+            ()-> new AmethystVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
 
 
     public static void register(IEventBus eventBus){

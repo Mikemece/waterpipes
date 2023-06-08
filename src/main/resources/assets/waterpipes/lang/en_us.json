@@ -17,6 +17,9 @@
 
   "item.waterpipes.hose": "Hose",
   "item.waterpipes.piece_of_coal": "Piece of coal",
+  "item.waterpipes.vape_battery": "Vape battery",
+
+  "item.waterpipes.amethyst_vape": "Amethyst vape",
 
   "waterpipes.tooltip.liquid.amount.with.capacity" : "%s / %s mB",
   "waterpipes.tooltip.liquid.amount": "%s mB",
