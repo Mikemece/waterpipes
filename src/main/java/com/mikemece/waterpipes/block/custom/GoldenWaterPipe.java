@@ -113,7 +113,7 @@ public class GoldenWaterPipe extends BaseEntityBlock {
                 pLevel.playSound(null, pPos, ModSounds.WATER_PIPE_SMOKE.get(), SoundSource.BLOCKS,2.5f,1f);
                 GWPEntity.craftItem((GWPEntity) entity);
                 pPlayer.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING,1200));
-                pPlayer.addEffect(new MobEffectInstance(MobEffects.LEVITATION,300));
+                pPlayer.addEffect(new MobEffectInstance(MobEffects.LEVITATION,400));
 
 
             //Si se intenta fumar cuando no tiene materiales, se apaga

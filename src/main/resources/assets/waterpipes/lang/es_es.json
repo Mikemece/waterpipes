@@ -17,10 +17,20 @@
 
   "item.waterpipes.hose": "Manguera",
   "item.waterpipes.piece_of_coal": "Carboncillo",
+  "item.waterpipes.vape_battery": "Batería de vape",
+
+  "item.waterpipes.amethyst_vape": "Vape de amatista",
+  "item.waterpipes.copper_vape": "Vape de cobre",
+  "item.waterpipes.diamond_vape": "Vape de diamante",
+  "item.waterpipes.emerald_vape": "Vape de esmeralda",
+  "item.waterpipes.golden_vape": "Vape de oro",
+  "item.waterpipes.lapis_vape": "Vape de lapis",
+  "item.waterpipes.netherite_vape": "Vape de netherita",
 
   "waterpipes.tooltip.liquid.amount.with.capacity" : "%s / %s mB",
   "waterpipes.tooltip.liquid.amount": "%s mB",
 
   "sounds.waterpipes.water_pipe_on": "Se enciende una cachimba",
-  "sounds.waterpipes.water_pipe_smoke": "Se fuma una cachimba"
+  "sounds.waterpipes.water_pipe_smoke": "Se fuma una cachimba",
+  "sounds.waterpipes.vaping": "Alguien está vapeando"
 }

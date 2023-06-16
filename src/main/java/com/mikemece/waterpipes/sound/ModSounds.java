@@ -20,6 +20,7 @@ public class ModSounds {
     //Primer sonido registrado
     public static RegistryObject<SoundEvent> WATER_PIPE_ON = registerSoundEvent("water_pipe_on");
     public static RegistryObject<SoundEvent> WATER_PIPE_SMOKE = registerSoundEvent("water_pipe_smoke");
+    public static RegistryObject<SoundEvent> VAPING = registerSoundEvent("vaping");
 
     public static void register(IEventBus eventBus){
         SOUND_EVENTS.register(eventBus);

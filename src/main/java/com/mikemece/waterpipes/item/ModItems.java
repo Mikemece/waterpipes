@@ -1,8 +1,7 @@
 package com.mikemece.waterpipes.item;
 
 import com.mikemece.waterpipes.Waterpipes;
-import com.mikemece.waterpipes.item.custom.AmethystVape;
-import com.mikemece.waterpipes.item.custom.PieceOfCoalItem;
+import com.mikemece.waterpipes.item.custom.*;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -24,6 +23,18 @@ public class ModItems {
             ()-> new PieceOfCoalItem(new Item.Properties().tab(Waterpipes.WATERPIPES)){});
     public static final RegistryObject<Item> AMETHYST_VAPE = ITEMS.register("amethyst_vape",
             ()-> new AmethystVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
+    public static final RegistryObject<Item> COPPER_VAPE = ITEMS.register("copper_vape",
+            ()-> new CopperVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
+    public static final RegistryObject<Item> DIAMOND_VAPE = ITEMS.register("diamond_vape",
+            ()-> new DiamondVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
+    public static final RegistryObject<Item> EMERALD_VAPE = ITEMS.register("emerald_vape",
+            ()-> new EmeraldVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
+    public static final RegistryObject<Item> GOLDEN_VAPE = ITEMS.register("golden_vape",
+            ()-> new GoldenVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
+    public static final RegistryObject<Item> LAPIS_VAPE = ITEMS.register("lapis_vape",
+            ()-> new LapisVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
+    public static final RegistryObject<Item> NETHERITE_VAPE = ITEMS.register("netherite_vape",
+            ()-> new NetheriteVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
 
 
     public static void register(IEventBus eventBus){

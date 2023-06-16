@@ -20,10 +20,17 @@
   "item.waterpipes.vape_battery": "Vape battery",
 
   "item.waterpipes.amethyst_vape": "Amethyst vape",
+  "item.waterpipes.copper_vape": "Copper vape",
+  "item.waterpipes.diamond_vape": "Diamond vape",
+  "item.waterpipes.emerald_vape": "Emerald vape",
+  "item.waterpipes.golden_vape": "Golden vape",
+  "item.waterpipes.lapis_vape": "Lapis vape",
+  "item.waterpipes.netherite_vape": "Netherite vape",
 
   "waterpipes.tooltip.liquid.amount.with.capacity" : "%s / %s mB",
   "waterpipes.tooltip.liquid.amount": "%s mB",
 
   "sounds.waterpipes.water_pipe_on": "Waterpipe turns on",
-  "sounds.waterpipes.water_pipe_smoke": "Smoking from a waterpipe"
+  "sounds.waterpipes.water_pipe_smoke": "Smoking from a waterpipe",
+  "sounds.waterpipes.vaping": "Someone is vaping"
 }

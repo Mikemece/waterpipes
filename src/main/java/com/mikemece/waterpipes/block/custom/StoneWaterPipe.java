@@ -2,6 +2,7 @@ package com.mikemece.waterpipes.block.custom;
 
 import com.mikemece.waterpipes.block.entity.ModBlockEntities;
 import com.mikemece.waterpipes.block.entity.custom.SWPEntity;
+import com.mikemece.waterpipes.item.custom.AmethystVape;
 import com.mikemece.waterpipes.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;

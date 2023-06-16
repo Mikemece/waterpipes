@@ -10,5 +10,11 @@
     "sounds": [
       "waterpipes:water_pipe_smoke"
     ]
+  },
+  "vaping": {
+    "subtitle": "sounds.waterpipes.vaping",
+    "sounds": [
+      "waterpipes:vaping"
+    ]
   }
 }
