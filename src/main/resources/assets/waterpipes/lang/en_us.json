@@ -26,6 +26,11 @@
   "item.waterpipes.golden_vape": "Golden vape",
   "item.waterpipes.lapis_vape": "Lapis vape",
   "item.waterpipes.netherite_vape": "Netherite vape",
+  "item.waterpipes.obsidian_vape": "Obsidian vape",
+  "item.waterpipes.quartz_vape": "Quartz vape",
+  "item.waterpipes.redstone_vape": "Redstone vape",
+  "item.waterpipes.stone_vape": "Stone vape",
+  "item.waterpipes.wooden_vape": "Wooden vape",
 
   "waterpipes.tooltip.liquid.amount.with.capacity" : "%s / %s mB",
   "waterpipes.tooltip.liquid.amount": "%s mB",

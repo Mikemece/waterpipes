@@ -35,6 +35,16 @@ public class ModItems {
             ()-> new LapisVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
     public static final RegistryObject<Item> NETHERITE_VAPE = ITEMS.register("netherite_vape",
             ()-> new NetheriteVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
+    public static final RegistryObject<Item> OBSIDIAN_VAPE = ITEMS.register("obsidian_vape",
+            ()-> new ObsidianVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
+    public static final RegistryObject<Item> QUARTZ_VAPE = ITEMS.register("quartz_vape",
+            ()-> new QuartzVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
+    public static final RegistryObject<Item> REDSTONE_VAPE = ITEMS.register("redstone_vape",
+            ()-> new RedstoneVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
+    public static final RegistryObject<Item> STONE_VAPE = ITEMS.register("stone_vape",
+            ()-> new StoneVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
+    public static final RegistryObject<Item> WOODEN_VAPE = ITEMS.register("wooden_vape",
+            ()-> new WoodenVape(new Item.Properties().tab(Waterpipes.WATERPIPES).durability(100)));
 
 
     public static void register(IEventBus eventBus){

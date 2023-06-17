@@ -26,6 +26,11 @@
   "item.waterpipes.golden_vape": "Vape de oro",
   "item.waterpipes.lapis_vape": "Vape de lapis",
   "item.waterpipes.netherite_vape": "Vape de netherita",
+  "item.waterpipes.obsidian_vape": "Vape de obsidiana",
+  "item.waterpipes.quartz_vape": "Vape de cuarzo",
+  "item.waterpipes.redstone_vape": "Vape de redstone",
+  "item.waterpipes.stone_vape": "Vape de piedra",
+  "item.waterpipes.wooden_vape": "Vape de madera",
 
   "waterpipes.tooltip.liquid.amount.with.capacity" : "%s / %s mB",
   "waterpipes.tooltip.liquid.amount": "%s mB",

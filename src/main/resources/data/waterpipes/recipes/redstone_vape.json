@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    " a ",
+    " b "
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "waterpipes:vape_battery"
+    },
+    "a": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "waterpipes:redstone_vape"
+  }
+}
