@@ -1,0 +1,41 @@
+
+{
+  "itemGroup.waterpipes": "Waterpipes",
+
+  "block.waterpipes.amethyst_water_pipe": "Cachimba de amatista",
+  "block.waterpipes.redstone_water_pipe": "Cachimba de redstone",
+  "block.waterpipes.emerald_water_pipe": "Cachimba de esmeralda",
+  "block.waterpipes.obsidian_water_pipe": "Cachimba de obsidiana",
+  "block.waterpipes.diamond_water_pipe": "Cachimba de diamante",
+  "block.waterpipes.lapis_water_pipe": "Cachimba de lapis",
+  "block.waterpipes.copper_water_pipe": "Cachimba de cobre",
+  "block.waterpipes.wooden_water_pipe": "Cachimba de madera",
+  "block.waterpipes.stone_water_pipe": "Cachimba de piedra",
+  "block.waterpipes.quartz_water_pipe": "Cachimba de cuarzo",
+  "block.waterpipes.netherite_water_pipe": "Cachimba de netherita",
+  "block.waterpipes.golden_water_pipe": "Cachimba de oro",
+
+  "item.waterpipes.hose": "Manguera",
+  "item.waterpipes.piece_of_coal": "Carboncillo",
+  "item.waterpipes.vape_battery": "Batería de vape",
+
+  "item.waterpipes.amethyst_vape": "Vape de amatista",
+  "item.waterpipes.copper_vape": "Vape de cobre",
+  "item.waterpipes.diamond_vape": "Vape de diamante",
+  "item.waterpipes.emerald_vape": "Vape de esmeralda",
+  "item.waterpipes.golden_vape": "Vape de oro",
+  "item.waterpipes.lapis_vape": "Vape de lapis",
+  "item.waterpipes.netherite_vape": "Vape de netherita",
+  "item.waterpipes.obsidian_vape": "Vape de obsidiana",
+  "item.waterpipes.quartz_vape": "Vape de cuarzo",
+  "item.waterpipes.redstone_vape": "Vape de redstone",
+  "item.waterpipes.stone_vape": "Vape de piedra",
+  "item.waterpipes.wooden_vape": "Vape de madera",
+
+  "waterpipes.tooltip.liquid.amount.with.capacity" : "%s / %s mB",
+  "waterpipes.tooltip.liquid.amount": "%s mB",
+
+  "sounds.waterpipes.water_pipe_on": "Se enciende una cachimba",
+  "sounds.waterpipes.water_pipe_smoke": "Se fuma una cachimba",
+  "sounds.waterpipes.vaping": "Alguien está vapeando"
+}
