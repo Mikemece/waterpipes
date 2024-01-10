@@ -14,7 +14,7 @@ public class ModSounds {
 
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
-        return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(Waterpipes.MOD_ID, name)));
+        return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Waterpipes.MOD_ID, name)));
     }
 
     //Primer sonido registrado
