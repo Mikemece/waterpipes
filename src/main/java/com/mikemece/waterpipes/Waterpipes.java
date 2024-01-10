@@ -10,15 +10,9 @@ import com.mikemece.waterpipes.screen.WaterPipeScreen;
 import com.mikemece.waterpipes.sound.ModSounds;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -34,8 +28,8 @@ public class Waterpipes
     public static final String MOD_ID = "waterpipes";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    private void addCreative(CreativeModeTabEvent.BuildContents event){
-        if(event.getTab()== ModCreativeTab.WATERPIPES_TAB){
+    private void addCreative(BuildCreativeModeTabContentsEvent event){
+        if(event.getTab()== ModCreativeTab.WATERPIPES_TAB.get()){
             event.accept(ModBlocks.AMETHYST_WATER_PIPE);
             event.accept(ModBlocks.DIAMOND_WATER_PIPE);
             event.accept(ModBlocks.COPPER_WATER_PIPE);
@@ -64,7 +58,7 @@ public class Waterpipes
             event.accept(ModItems.VAPE_BATTERY);
             event.accept(ModItems.PIECE_OF_COAL);
         }
-        if(event.getTab()== CreativeModeTabs.INGREDIENTS){
+        if(event.getTabKey()== CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.PIECE_OF_COAL);
         }
     }
@@ -76,6 +70,7 @@ public class Waterpipes
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModCreativeTab.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::clientSetup);

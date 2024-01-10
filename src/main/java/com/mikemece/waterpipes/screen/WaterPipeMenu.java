@@ -22,7 +22,7 @@ public class WaterPipeMenu extends AbstractContainerMenu {
     private FluidStack fluidStack;
 
     protected WaterPipeMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
-        this(pContainerId, inv, inv.player.level.getBlockEntity(extraData.readBlockPos()));
+        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()));
     }
 
     public WaterPipeMenu(int pContainerId, Inventory inv, BlockEntity entity) {
@@ -30,7 +30,7 @@ public class WaterPipeMenu extends AbstractContainerMenu {
         super(ModMenuTypes.WATER_PIPE_MENU.get(), pContainerId);
         checkContainerSize(inv, 2);
         blockEntity = ((WaterPipeEntity) entity);
-        this.level = inv.player.level;
+        this.level = inv.player.level();
         this.fluidStack=blockEntity.getFluidStack();
         addPlayerInventory(inv);
         addPlayerHotbar(inv);

@@ -63,6 +63,6 @@ Each water pipe gives different effects when smoked, so you sohuld try each one!
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[1.19.3,1.20)"
+    versionRange="[1.19.3,1.24)"
     ordering="NONE"
     side="BOTH"
